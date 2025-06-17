@@ -1,5 +1,5 @@
 'use client'
-import { Button, MovingBorder } from '@/components/ui/moving-border'
+import { Button } from '@/components/ui/moving-border'
 import { TextGenerateEffect } from '@/components/ui/text-generate-effect'
 import { workExperience } from '@/data/data'
 import Image from 'next/image'

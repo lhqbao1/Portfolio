@@ -15,7 +15,7 @@ export function GridSection() {
                     className={item.className}
                     id={item.id}
                     imgClassName={item.imgClassName}
-                    titleClassName={item.titleClassName}
+                    // titleClassName={item.titleClassName}
                     img={item.img}
                     spareImg={item.spareImg}
                 />

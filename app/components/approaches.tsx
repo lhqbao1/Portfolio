@@ -2,7 +2,7 @@
 import { CanvasRevealEffect } from '@/components/ui/canvas-reveal-effect'
 import { TextGenerateEffect } from '@/components/ui/text-generate-effect'
 import { AnimatePresence } from 'motion/react'
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "motion/react";
 
 
@@ -132,7 +132,7 @@ const AceternityIcon = () => {
     );
 };
 
-export const Icon = ({ className, ...rest }: any) => {
+export const Icon = ({ className, ...rest }: React.SVGProps<SVGSVGElement>) => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"

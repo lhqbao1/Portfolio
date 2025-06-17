@@ -10,6 +10,7 @@ import {
 } from "motion/react";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import Image from "next/image";
 
 export const AnimatedTooltip = ({
     items,
@@ -38,8 +39,8 @@ export const AnimatedTooltip = ({
         useTransform(x, [-100, 100], [-50, 50]),
         springConfig,
     );
-    const handleMouseMove = (event: any) => {
-        const halfWidth = event.target.offsetWidth / 2;
+    const handleMouseMove = (event: React.MouseEvent<HTMLImageElement, MouseEvent>) => {
+        const halfWidth = (event.target as HTMLImageElement).offsetWidth / 2;
         x.set(event.nativeEvent.offsetX - halfWidth); // set the x value, which is then used in transform and rotate
     };
 
@@ -51,7 +52,7 @@ export const AnimatedTooltip = ({
                         "relative group",
                         containerClassName
                     )}
-                    key={item.name}
+                    key={idx}
                     onMouseEnter={() => setHoveredIndex(item.id)}
                     onMouseLeave={() => setHoveredIndex(null)}
                 >
@@ -88,13 +89,14 @@ export const AnimatedTooltip = ({
                         )}
                     </AnimatePresence>
                     {item.image ??
-                        <img
+                        <Image
                             onMouseMove={handleMouseMove}
                             height={100}
                             width={100}
-                            src={item.image}
+                            src={item.image ?? "/default-image.png"}
                             alt={item.name}
                             className="relative !m-0 h-14 w-14 rounded-full border-2 border-white object-cover object-top !p-0 transition duration-500 group-hover:z-30 group-hover:scale-105"
+
                         />
                     }
                     <Link href={item.url ? item.url : ''}>

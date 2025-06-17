@@ -7,7 +7,6 @@ import { globeConfig, sampleArcs } from "@/data/globe";
 import { Clipboard, ClipboardCheck } from "lucide-react";
 import { useState } from "react";
 import { ContainerTextFlip } from "./container-text-flip";
-import dynamic from "next/dynamic";
 
 export const BentoGrid = ({
     className,
@@ -34,9 +33,9 @@ export const BentoGridItem = ({
     className,
     title,
     description,
-    header,
+    // header,
     imgClassName,
-    titleClassName,
+    // titleClassName,
     img,
     spareImg,
     id
@@ -44,10 +43,10 @@ export const BentoGridItem = ({
     className?: string;
     title?: string | React.ReactNode;
     description?: string | React.ReactNode;
-    header?: React.ReactNode;
+    // header?: React.ReactNode;
     icon?: React.ReactNode;
     imgClassName?: string,
-    titleClassName?: string,
+    // titleClassName?: string,
     img?: string,
     spareImg?: string,
     id?: number

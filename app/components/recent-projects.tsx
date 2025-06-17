@@ -3,7 +3,6 @@ import { PinContainer } from '@/components/ui/3d-pin-card'
 import { TextGenerateEffect } from '@/components/ui/text-generate-effect'
 import { projects } from '@/data/data'
 import Image from 'next/image'
-import Link from 'next/link'
 import React from 'react'
 
 const RecentProjects = () => {
