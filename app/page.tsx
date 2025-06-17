@@ -1,3 +1,4 @@
+'use client'
 import { GridBackgroundDemo } from "@/components/ui/grid-background";
 import { GridSection } from "./components/grid-section";
 import HeroSection from "./components/hero-section";
