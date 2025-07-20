@@ -11,7 +11,7 @@ const HeroSection = () => {
             <Spotlight height={1000} />
             <div>
                 <div className='pt-14 flex flex-col items-center'>
-                    <TopNav />
+                    {/* <TopNav /> */}
 
                     <div className='flex flex-col items-center justify-center text-center pt-4 w-4/6'>
                         <h1 className='text-sm text-white opacity-60 uppercase spacing tracking-[.55rem]'>Dynamic Web Magic with Next.js</h1>
