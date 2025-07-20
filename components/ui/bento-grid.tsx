@@ -165,7 +165,7 @@ export const BentoGridItem = ({
                             onClick={handleCopy}
                         >
                             {copied ? <ClipboardCheck size={16} /> : <Clipboard size={16} />}
-                            <ContainerTextFlip words={['Copy to clipboard', 'myemail@gmail.com']} />
+                            <ContainerTextFlip words={['Copy to clipboard', 'luonghoangquocbao@gmail.com']} />
                         </div>
                     </button>
                 )}
