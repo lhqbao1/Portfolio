@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import TopNav from './nav'
+// import TopNav from './nav'
 import { Spotlight } from '@/components/ui/spotlight-new'
 import { TextGenerateEffect } from '@/components/ui/text-generate-effect'
 import { ArrowUpRight } from 'lucide-react'
