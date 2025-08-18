@@ -19,11 +19,11 @@ export const projects = [
   },
   {
     id: 3,
-    title: "Saticus VN/Indonesia",
-    des: "A website for showcasing and scheduling for customers interested in purchasing laboratory and industrial equipment.",
-    img: "/saticus.png",
-    iconLists: ["/php.png", "/sass.svg", "/woo.svg", "/js.svg", "/rankmath.png"],
-    link: "https://saticus.id/",
+    title: "Bar Indol",
+    des: "A website for showcasing a bar's atmosphere, drinks, and events, helping customers discover and plan visits.",
+    img: "/imagebar.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/gsap.png", "/shadcn.png"],
+    link: "https://bar-indol.vercel.app/",
   },
   {
     id: 4,
